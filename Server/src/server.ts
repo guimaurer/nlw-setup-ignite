@@ -10,10 +10,9 @@ app.register(cors)
 
 
 app.get('/', async () => {
-    const habits = await prisma.habit.findMany({})
+  
     
-    
-    return "<h1>asdHello Gui</h1>"
+    return "asdHello Gui"
 })
 app.listen({
     port: 3333,
